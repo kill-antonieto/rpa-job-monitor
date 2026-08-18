@@ -19,6 +19,10 @@ python rpa_monitor.py dashboard
 
 La base se guarda en `rpa-monitor.db`, que no se versiona.
 
+## Criterio de registro
+
+Registra una ejecución por cada corrida relevante del bot. Usa `success` cuando el resultado esperado se complete, `warning` cuando requiera seguimiento y `failed` cuando no pueda finalizar. Las notas deben indicar el volumen procesado, el error observado o la acción de recuperación; así el panel se convierte en una base útil para detectar incidentes repetidos.
+
 ## Próximas mejoras
 
 - Importar ejecuciones desde UiPath, Power Automate o Automation Anywhere.
